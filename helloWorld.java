@@ -1,22 +1,17 @@
 public class helloWorld {
-    public static int signo(int x) {
+    public static void signo(int x) {
         if (x > 0) {
-            return 1;
-        } else if (x == 0) {
-            return 0;
+            System.out.print("positivo");
+        } else if(x == 0) {
+            System.out.print("cero");
         } else {
-            return -1;
+            System.out.print("negativo");
         }
     }
 
     public static void main(String[] args) {
-        int signo = signo(0);
-        if (signo > 0) {
-            System.out.println("positivo");
-        } else if (signo == 0) {
-            System.out.println("cero");
-        } else {
-            System.out.println("negativo");
-        }
+        String par1 = args[1];
+        int x = Integer.parseInt(par1);
+        System.out.println(x);
     }
 }

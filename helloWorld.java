@@ -1,11 +1,22 @@
 public class helloWorld {
-    public static int restar(int x, int y) {
-        int res = x - y;
-        return res;
+    public static int signo(int x) {
+        if (x > 0) {
+            return 1;
+        } else if (x == 0) {
+            return 0;
+        } else {
+            return -1;
+        }
     }
 
     public static void main(String[] args) {
-        int res = restar(4, 2);
-        System.out.println("La resta es: " + res);
+        int signo = signo(0);
+        if (signo > 0) {
+            System.out.println("positivo");
+        } else if (signo == 0) {
+            System.out.println("cero");
+        } else {
+            System.out.println("negativo");
+        }
     }
 }

@@ -7,15 +7,14 @@ class Persona {
         this.edad = edad;
     }
 
-    public void saludar() {
-        System.out.println("Hola, mi nombre es " + nombre + "y tengo " + edad + " anios");
+    static void saludar() {
+        System.out.println("Hola :3");
     }
 
 }
 
 public class helloWorld {
     public static void main(String[] args) {
-        Persona persona = new Persona("Juan", 25);
-        persona.saludar();
+        Persona.saludar();
     }
 }

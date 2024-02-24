@@ -1,11 +1,11 @@
 public class helloWorld {
-    public static int sumar(int num1, int num2) {
-        int res = num1 + num2;
+    public static int restar(int x, int y) {
+        int res = x - y;
         return res;
     }
 
     public static void main(String[] args) {
-        int resultadoSuma = sumar(2, 2);
-        System.out.println("La suma es: " + resultadoSuma);
+        int res = restar(4, 2);
+        System.out.println("La resta es: " + res);
     }
 }
